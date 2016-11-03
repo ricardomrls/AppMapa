@@ -1,0 +1,194 @@
+/*Resetear la hoja de estilos*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', 'Arial','Sans-serif';
+}
+
+.bg1{
+    background: -webkit-linear-gradient(BLACK, PURPLE);
+
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transition: all 1s ease;
+}
+
+.bg2{
+    background: -webkit-linear-gradient(RED, red);
+
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transition: all 1s ease;
+}
+
+.boton{
+    
+    width: 50%; /*Anchura del boton*/
+    margin-left: 25%;
+    background: transparent;
+
+    border: 2px solid rgba(255,255,255,.8); /*linea blanca*/
+
+    border-radius: 4px;
+    float: left;
+    height: 40px;
+    color: rgba(255,255,255,.8);
+    font-size: 1.2em;
+    outline: none;
+    margin-top: 60px;    
+
+
+}
+
+.bg1 img{
+    width: 50%;
+    -webkit-filter:invert(100%);
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+
+
+.encabezado{
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-size: 1.3em;
+    line-height: 40px;
+    background: rgba(0,0,0,.2);
+    float: left;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.fuente{
+    width: 100%;
+    height: 70px;
+    color: white;
+    font-size: 2.2em;
+    line-height: 100px;
+    position: fixed
+    background: rgba(0,0,0,.2);
+    float: left;
+    
+    top: 0px;
+    left: 0px;
+}
+
+.tabs{
+    width: 100%;
+    float: left;
+    position: relative;
+    margin-top: 40px;
+    
+    height: 40px;
+}
+
+    .tab{
+        float: left;
+        width: 50%;
+        line-height: 40px;
+        height: 40px;
+        background: rgba(255,255,255,.5);
+        border: none;
+        font-size: 1.1em;
+    }
+
+.activo{
+    color:rgba(255,255,255, .8);   
+    text-shadow: 0px 0px 10px white;
+}
+
+.switch{
+    width: 40%;
+    background: rgba(0,0,0,.4);
+    height: 40px;
+    border: none;
+    float: left;
+    margin-top: 4px;
+    outline: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+.switch-activo{
+    border: 2px solid #EC9DD8;
+    box-sizing: border-box;
+}
+
+.der{
+    border-radius:0px 20px 20px 0px;
+}
+
+.izq{
+    border-radius: 20px 0px 0px 20px;
+    margin-left: 10%;
+}
+
+.texto{
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    float: left;
+    margin-top: 70px;
+    font-size: 2em;
+    text-align: center;
+    background: #7a2951;
+    border: none;
+    outline: none;
+    color: white;
+    margin-bottom: -40px;
+    border-radius: 15px;
+}
+
+.texto2{
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    float: left;
+    margin-top: 70px;
+    font-size: 2em;
+    text-align: center;
+    background: #7a2951;
+    border: none;
+    outline: none;
+    color: white;
+    margin-bottom: -40px;
+    border-radius: 15px;
+}
+
+
+.contenido{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 100%;
+    top: 80px;
+    left: 0%;
+    transition: .5s all ease;
+    background-image: url(bg.png); 
+}
+
+.contenido2{
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 100%;
+    top: 80px;
+    left: 0%;
+    transition: .5s all ease;
+    background-image: url(bg.png); 
+}
+
+.bg2{
+    background: -webkit-linear-gradient(#A15FB6,#6E77DC) !important;
+}
+
+.oscuro{
+    background: black;
+}

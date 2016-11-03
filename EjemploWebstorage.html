@@ -1,0 +1,25 @@
+<script>
+
+    u=document.getElementById('usuario').value;
+    p=document.getElementById('password').value;
+    
+    //Comprobamos si ya hay un contador, si no, lo creamos
+    
+    if (localStorage.getItem('contador')){
+        localStorage.setItem('contador', 0);
+    }
+    
+    //Obtener el contador
+    
+    contador = localStorage.getItem('contador');
+    console.log(contador)
+    
+    //Guardar los datos en una variable con el contador
+    localStorage.setItem('usuario'+contador, u);
+    localStorage.setItem('password'+contador, p);
+    
+    //Incrementar el contador
+    
+    contador++;
+    localStorage.setItem('contador', contador);
+</script>

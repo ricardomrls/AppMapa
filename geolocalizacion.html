@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>Sesión</title>
+		<meta charset="utf-8">
+        
+        <link href="estilo.css" rel="stylesheet"
+              type="text/css">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+	</head>
+	
+	<body class="bg1">
+		
+		<div>
+			<h1 class="fuente">Registrate</h1>
+            <h1></h1>
+		</div>
+		
+		
+        
+		<input type="text" class="texto" id="idUsuario" placeholder="Nombre">
+        <input type="text" class="texto" id="idCorreo" placeholder="Correo">
+        <input type="text" class="texto" id="idContraseña" placeholder="Password">
+        <button class="boton" id="btnColocar" onclick="registrarse()"><a href="index.html">Registrarse</button>
+		<div id="mapa">
+        
+        </div>	
+	</body>
+<script>
+    window.addEventListener('load',cargar,true);
+        function cargar(){
+            if(localStorage.getItem('usuario')){
+                usuarioGuardado=localStorage.getItem('usuario');
+                document.getElementById('idUsuario').value=usuarioGuardado;
+            }
+            //Correo
+              if(localStorage.getItem('correo')){
+                correoGuardado=localStorage.getItem('correo');
+                document.getElementById('idCorreo').value=correoGuardado;
+            }
+            //Password
+              if(localStorage.getItem('password')){
+                passwordGuardado=localStorage.getItem('password');
+                document.getElementById('idContraseña').value=passwordGuardado;
+            }
+        }
+            function registrarse(){
+                usuario = document.getElementById('idUsuario').value;
+                localStorage.setItem('usuario', usuario),
+                    window.location.assign('registrarse.html')
+                correo = document.getElementById('idCorreo').value;
+                localStorage.setItem('correo', correo),
+                    window.location.assign('registrarse.html')
+                password = document.getElementById('idContraseña').value;
+                localStorage.setItem('password', password),
+                    window.location.assign('registrarse.html')
+            }
+    </script>
+    
+</html>

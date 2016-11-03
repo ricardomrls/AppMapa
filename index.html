@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Sesión</title>
+		<meta charset="utf-8">
+        
+        <link href="estilo.css" rel="stylesheet"
+              type="text/css">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+	</head>
+	
+	<body class="bg1">
+		
+		<div>
+			<h1 class="fuente">Iniciar sesión</h1>
+            <h1></h1>
+		</div>
+		
+		
+        
+		<input type="text" class="texto" id="correo" placeholder="Correo">
+        
+        <input type="text" class="texto" id="contraseña" placeholder="Contraseña">
+        <button class="boton" id="btnSesion" onclick="iniciarSesion()">Iniciar Sesión</button>
+        <button class="boton"><a href="registrarse.html">Registrarse</button>
+			
+	</body>
+
+<script>
+            var correo = document.getElementById('correo');
+            var password = document.getElementById('contraseña');
+    
+        
+       function iniciarSesion(){
+           if(localStorage.getItem('correo') == correo.value){
+               if(localStorage.getItem('password')==contraseña.value){
+                     window.location.assign('mapa.html');
+                    }else{
+                        alert("Contraseña incorrecta");    
+                    }
+                        }else{
+                        alert("Dirección de correo no válida");
+                        }
+       }
+</script>
+      
+    
+</html>
